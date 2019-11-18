@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>定义列表</title>
+</head>
+<body>
+    <!-- 1.定义列表的作用 -->
+    <!-- 1-1 给一堆数据添加列表语义 -->
+    <!-- 1-2 先通过dt标签定义列表中所有的标题，然后再通过dd标签给每个描述信息 -->
+    <!-- 2.格式：
+            <dl>
+                <dt></dt>
+                <dd></dd>
+
+                <dt></dt>
+                <dd></dd>
+            </dl>
+    -->
+    <!-- 2-1 dt和dd都是英文的缩写 -->
+    <!-- dt：difinition title的缩写，所以dt含义就是用来定义列表的标题 -->
+    <!-- dd: difinition description的缩写，所以dd含义就是用来定义对应标题的描述 -->
+
+    <!-- 3.定义列表的应用场景 -->
+    <!-- 3-1 做网站尾部的相关信息 -->
+    <!-- 3-2 做图文混排 -->
+    <!-- 4.定义列表的注意点 -->
+    <!-- 4-1 和ul/ol一样，dl和dt/dd是一个整体，所以他们一般情况下不会单独出现，都是一起出现 -->
+    <!-- 4-2 和ul/ol一样，由于dl和dt/dd是一个组合标签，所以dl中建议只放dt和dd标签 -->
+    <!-- 4-3 一个dt可以没有对应的dd，也可以有多个对应的dd,但是无论有或者没有dd，都不推荐使用。 -->
+    <!-- 推荐使用一个dt对应一个dd -->
+    <!-- 4-4 和li标签一样，当需要丰富界面时，我们可以在dt和dd标签中继续添加其它的标签 -->
+
+    <dl>
+        <dt>北京</dt>
+        <dd>中国的首都</dd>
+
+        <dt>上海</dt>
+        <dd>富人的聚结地</dd>
+
+    </dl>
+
+    <!-- 在编辑器中如何快速编写一个dl的格式：
+         dl>dt+dd -->
+
+         <dl>
+             <dt>
+                 <h4>购物指南</h4>
+             </dt>
+             <dd>购物流程</dd>
+             <dd>会员介绍</dd>
+             <dd>生活旅行</dd>
+             <dd>常见问题</dd>
+             <dd>大家电</dd>
+             <dd>联系客服</dd>
+         </dl>
+</body>
+</html>

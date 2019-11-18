@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>select标签</title>
+</head>
+<body>
+    <!-- 1、select标签 -->
+            <!-- 作用:用于定义下拉列表 -->
+            <!-- 格式:
+                    <select name="" id="">
+                        <optgroup label="成都">
+                            <option>列表数据</option>
+                        </optgroup>
+                    </select>
+            
+            -->
+            <!-- 注意点：
+                        1、下拉列表不能输入内容，但是可以直接在列表中选择内容
+                        2、可以通过给option标签添加一个selected="selected"属性来指定列表的默认值。
+                        3、可以通过给option标签，包裹一层optgroup标签来给下拉列表中的数据分类
+            -->
+
+    <select name="" id="">
+        <option value="">北京</option>
+        <option value="">上海</option>
+        <option value="">天津</option>
+        <option value="" selected="selected">广州</option>
+    </select>
+
+
+    <br>
+    <hr>
+    <select name="" id="">
+        <optgroup label="成都">
+            <option value="">天府新区</option>
+            <option value="">高新区</option>
+            <option value="">锦江区</option>
+            <option value="" >武侯区</option>
+        </optgroup>
+        <optgroup label="香港">
+            <option value="">沙坪坝</option>
+            <option value="">铜锣湾</option>
+            <option value="">屯门</option>
+        </optgroup>
+    </select>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <!-- 2、textarea标签 -->
+            <!-- 作用：定义一个多行的输入框 -->
+            <!-- 格式:
+                        <textarea name="" id="" cols="30" rows="10">
+
+                        </textarea>
+
+             -->
+             <!-- 注意点：
+                        1、默认情况下输入框可以无限换行
+                        2、默认情况下输入框有自己的宽度和高度
+                        3、可以通过cols和rows来指定输入框的宽度和高度，虽然指定了列数和行数，但是还可以无限往下输入
+                        4、默认情况下输入框是可以手动拉伸的
+            -->
+
+    <textarea name="" id="" cols="30" rows="10">
+
+    </textarea>
+</body>
+</html>

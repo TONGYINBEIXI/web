@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css盒子模型</title>
+    <style>
+    span,a,b,strong{
+                    display:inline-block;
+                    width: 100px;
+                    height: 100px;
+                    border: 6px solid #000;
+                    padding:20px;
+                    margin:20px;
+    }
+    </style>
+</head>
+<body>
+        <!-- 一、什么是css盒子模型
+            css盒子模型仅仅是一个形象的比喻，html中所有的标签都是盒子
+
+            结论：
+            1、在html中所有的标签都可以设置
+            宽度/高度:指定存放内容的区域
+            内边距：边框和内容之间的距离
+            边框：边框
+            外边距：盒子和盒子之间的间隙
+
+         -->
+
+         <span>我是span</span>
+         <a href="#">我是超链接</a>
+         <b>我是加粗</b>
+         <strong>我是强调</strong>
+
+
+         <!-- 注意：
+              规律：1、增加了padding之后元素的宽高也会发生变化。2、如果增加了padding
+              规律：1、增加了border之后元素的宽高也会发生变化。2、如果增加了border之后还想保持元素的宽高，那么就必须减去内容的宽高。      
+              还可以直接用这个属性，css3中新增属性box-sizing:border-box;这个属性可以保证我们给盒子新增padding和border之后，盒子元素的宽度和高度不变
+    
+        -->
+
+
+        <!-- 补充：
+                  1、text-align:center;和marign:0 auto;区别
+                     text-align:center;作用设置盒子中存储的文字/图片水平居中
+
+                     marign:0 auto;作用让盒子自己水平居中
+        -->
+</body>
+</html>

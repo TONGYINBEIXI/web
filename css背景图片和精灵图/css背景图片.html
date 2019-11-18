@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css背景图片</title>
+    <style>
+            div{
+                width:500px;
+                height: 500px;   
+                
+            }
+            .box1{
+                    background-color:red;
+                    background-image: url(../demo练习/imges/百度.png);
+                    background-repeat:  no-repeat;
+                    /* background-position: left center; */
+                    /* background-position: center center; */
+                    /* background-position: top center; */
+                    /* background-position: left top; */
+                    /* background-position: centent top; */ 
+                    /* background-position: 100px 0; */
+                    background-position: 100px 200px;
+            }   
+            /* body{
+                background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1568184188564&di=515165d4747f638f73abf4e3a389c3c2&imgtype=0&src=http%3A%2F%2Fjf258.com%2Fuploads%2F2014-08-14%2F205448835.jpg);
+                background-repeat: repeat;
+            } */
+    </style>
+</head>
+<body>
+        <!-- 一、如何设置背景图片？ -->
+            <!-- 在css中有一个叫做background-images:url();的属性，就是专门用于设置背景图片的 -->
+
+        <!-- 注意点:
+                    1、图片的地址必须放在url()中，图片的地址可以是本地的地址，也可以是网络的地址
+                    2、如果图片的大小没有标签的大小大，那么会自动在水平和垂直方向平铺和填充
+                    3、如果网页上出现了图片，那么游览器会再次发送请求获取图片。
+        -->
+
+        <div class="box1"></div>
+
+
+
+        <!-- 二、如何控制背景图片的平铺方式？ -->
+            <!-- 在css中有一个background-repeat属性，就是专门用于控制背景图片的平铺方式 -->
+            <!-- 取值：
+                    repeat 默认，在水平和垂直都需要平铺
+                    no-repeat 在水平和垂直都不需要平铺
+                    repeat-x 只在水平方向平铺
+                    repeat-y 只在垂直方向平铺
+            
+            -->
+
+            <!-- 应用场景：
+                         可以通过背景图片的平铺来降低图片的大小，提升网页的访问速度
+            
+            -->
+
+
+        <!--三、如何控制背景图片的位置？  -->
+            <!-- 1、在css中有一个叫做background-position:属性，就是专门用于控制背景图片的位置 -->
+            <!-- 2、格式：
+            
+                background-position:水平方向 垂直方向;
+            -->
+            <!-- 3、取值：
+                     1、具体的方位名词
+                        水平方向：left center right
+                        垂直方向：top  center bottom
+                        background-position: center center;
+                        
+                     2、具体的像素
+                         background-position: 100px 200px;
+
+            background-position:水平方向 垂直方向;
+            -->
+
+
+        <!--四、什么是背景关联方式？(了解)  -->
+            <!-- 默认情况下背景图片会随着滚动条的滚动而滚动，如果不想让背景图片随着滚动条的滚动而滚动，那么我们就可以修改背景图片和滚动条的关联方式-->
+            <!-- 格式：
+                
+                background-attachment:scroll;默认
+                background-attachment:fixed;
+            
+            
+            -->
+            <!-- 取值：
+                      scorll 默认值，会随着滚动条的滚动而滚动
+                      fixed  不会随着滚动条的滚动而滚动
+            
+            -->
+</body>
+</html>

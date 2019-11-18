@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>form表单标签</title>
+</head>
+<body>
+	<!-- 1、什么是表单？ -->
+	<!-- 表单就是专门用来收集用户信息的 -->
+
+	<!-- 2、什么是表单元素 -->
+		<!-- 2-1、什么是元素 -->
+		<!-- 在html 标签/标记/元素都是指html中的标签 -->
+		<!-- 例如：<a> a标签/a标记/a元素 -->
+
+	<!--3、表单格式：
+		<form>
+			<表单元素>
+		</form>
+	  -->
+
+	<!--4、常见的表单元素  -->
+		<!-- input标签，input标签有一个type属性，这个属性有很多类型的取值，取值的不同就决定了input标签的功能和外观 -->
+
+	<form action="">
+		<!-- 明文输入框 -->
+		账号：<input type="text"><br>
+		<!-- 暗文输入框 -->
+		密码：<input type="password"><br>
+		
+		<!--给输入框设置默认值  -->
+		账号：<input type="text" value="默认值"><br>
+		密码：<input type="password" value="默认值"><br>
+
+		<!-- 单选框 -->
+		<!-- 注意点：1、默认情况下单选框radio，不会相互排斥，要想单选框相互排斥，那么必须给每一个单选框标签都设置一个name属性,然后name属性还必须设置相同的值。-->
+		<!-- 2、要想让单选框默认选中某一个框子，那么可以给input标签添加一个checked属性-->
+		<!-- 3、在html中如果属性的取值和属性的名称一样，可以只写一个，如checked="checked"写成checked,但是一般不建议省略 -->
+		性别：
+		<input type="radio" name="gender">男
+		<input type="radio" name="gender">女
+		<input type="radio" name="gender" checked="checked">保密<br>
+
+	
+		<!--多选框  -->
+		爱好：
+		<input type="checkbox">篮球
+		<input type="checkbox">足球
+		<input type="checkbox">跑步
+	</form>
+
+
+<br>
+<hr>
+	<!-- 上面是input标签 -->
+
+	<!-- 下面是按钮标签 -->
+	<form action="">
+				<!-- 定义一个普通按钮
+					 作用：配合js完成一些操作 -->
+				<input type="button" value="我是按钮" onclick="alert(123)"><br>
+
+				<!-- 定义一个图片按钮
+					 作用：配合js完成一些操作 -->
+				<input type="image" src="图片路径" onclick="alert(456)"><br>
+
+				<!-- 定义一个重置按钮
+					 作用：清空表单中的数据
+					 注意点：重置按钮有默认的按钮标题，默认叫做重置，也可以通过vaule属性来修改默认标题-->
+				<input type="reset" value="清空">
+
+				<!-- 定义提交按钮
+					 作用：将表单中的数据提交到远程服务器
+					 注意点：
+					 要想把表单中的数据提交到远程服务器，必须满足两个条件
+					 1、告诉表单需要提交到哪个服务器
+					 可以通过form标签的action属性来告诉表单，需要提交到哪个服务器
+
+
+					 2、告诉表单，表单中的哪些数据需要提交 
+					 就在对应的input表单中添加name属性，谁有name属性，谁就会被提交到后台
+
+				 -->
+				<input type="submit">
+
+				<!-- 隐藏域
+					 作用：用于悄悄咪咪的收集用户的一些数据，隐藏域hidden不会在页面显示 -->
+				<input type="hidden" name="隐藏提交到后台去的id" value="隐藏提交到后台去的值">
+	</form>
+
+</body>
+</html>
